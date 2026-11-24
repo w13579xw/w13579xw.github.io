@@ -232,8 +232,18 @@ function renderProjects(t) {
         <div class="project-metrics">
           ${p.metrics.map((m) => `<span class="metric-chip">${m}</span>`).join("")}
         </div>
-        <div class="tag-row">
-          ${p.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}
+        <div class="project-footer">
+          <div class="tag-row">
+            ${p.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}
+          </div>
+          ${
+            p.repoUrl
+              ? `<a class="project-repo-link" href="${p.repoUrl}" target="_blank" rel="noopener noreferrer">
+                  ${ICONS.github}
+                  <span>${state.lang === "zh" ? "GitHub 仓库" : "GitHub Repo"}</span>
+                </a>`
+              : ""
+          }
         </div>
       </article>`
     )

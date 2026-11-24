@@ -1,3 +1,7 @@
+<p align="center">
+  <strong>简体中文</strong> | <a href="./README_EN.md">English</a>
+</p>
+
 <div align="center">
 
 # Hi there, I'm Junxiang Wang (王俊翔) 👋
@@ -7,8 +11,6 @@
 [![Portfolio](https://img.shields.io/badge/Personal_Website-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://w13579xw.github.io)
 [![Email](https://img.shields.io/badge/Email-22d3ee?style=for-the-badge&logo=gmail&logoColor=white)](https://w13579xw.github.io/#contact)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/w13579xw)
-
-`wjx13916766748@stu.xidian.edu.cn`
 
 </div>
 
@@ -29,9 +31,10 @@
 | Direction | Project / Experience | Key Impact & Tech Stack |
 | :--- | :--- | :--- |
 | **LLM & Agent** | 杭州呈起科技 · 大模型与 Agent 应用开发（2026.07 – 2026.12） | OCR 文档流水线 + 开源 LLM SFT 本地部署 + PDF→PPT Agent Skill（`Python` `PyTorch` `SFT/LoRA` `OCR` `RAG` `Claude Code/Codex` `python-pptx`） |
-| **Embodied AI** | 众擎 T800 人形机器人高动态动作库与鲁棒 RL 控制 | 海选赛 **全球第 10 名**，540° 回旋踢与 150N 抗外力推力自恢复（`PyTorch` `PPO` `Isaac Gym/Sim` `Motion Retargeting`） |
-| **Embodied AI** | 宇树四足机器人强化学习 & 机械臂 VLA（Pi-0 / Diffusion Policy） | Isaac Gym 千级并行训练 + ROS2 Sim-to-Real 实机部署，获国赛三等奖（`ROS2` `PPO` `Pi-0` `Diffusion Policy` `Quantization`） |
-| **Graph-RAG** | 融合知识图谱的航运信息问答系统（校优毕设 · 软著） | `Recall@K > 92%`，图检索 `< 100ms`，幻觉率降低 **90%+**（`Django` `Neo4j/Cypher` `BiLSTM-CRF` `ESIM` `BERT+TextCNN`） |
+| **Embodied AI** | [**Delayed-Advice-Audit**](https://github.com/w13579xw/Delayed-Advice-Audit) · 机器人仿真策略与延迟消息通道审计框架 | v1.0.1 开源研究软件，涵盖 20 份审计数据集与 500 组冻结决策离线复现验证（`Python` `NumPy` `Gymnasium-Robotics` `MuJoCo` `MetaWorld` `Pytest`） |
+| **Embodied AI** | [**众擎 T800 / PM01**](https://github.com/w13579xw/pm01_minic) · 人形机器人高动态动作库与鲁棒 RL 控制 | 海选赛 **全球第 10 名**，540° 回旋踢与 150N 抗外力推力自恢复（`PyTorch` `PPO` `Isaac Gym/Sim` `Motion Retargeting`） |
+| **Embodied AI** | [**宇树四足机器人 RL (KaiWu)**](https://github.com/w13579xw/KaiWu) & 机械臂 VLA（Pi-0 / Diffusion Policy） | Isaac Gym 千级并行训练 + ROS2 Sim-to-Real 实机部署，获国赛三等奖（`ROS2` `PPO` `Pi-0` `Diffusion Policy` `Quantization`） |
+| **Graph-RAG** | [**融合知识图谱的航运信息问答系统**](https://github.com/w13579xw/shipping-info-system)（校优毕设 · 软著） | `Recall@K > 92%`，图检索 `< 100ms`，幻觉率降低 **90%+**（`Django` `Neo4j/Cypher` `BiLSTM-CRF` `ESIM` `BERT+TextCNN`） |
 | **Vision Research** | 医疗输液管缺陷智能筛查系统（YOLOv10-TPH） | 真实集准确率 **98.83%**、缺陷召回率 **99.32%**，论文在投 *Measurement*（`PyTorch` `YOLOv10n` `TPH` `CutPaste` `Grad-CAM`） |
 | **Quant & Infra** | 上海弈倍私募 · 量化脚本向量化 & 核心 MySQL 调优 | Python 耗时 **-80%**，核心 SQL 查询 **-70%**（`Python` `NumPy` `Pandas` `MySQL Indexing` `Linux`） |
 

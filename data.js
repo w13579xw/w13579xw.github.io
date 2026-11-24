@@ -203,11 +203,33 @@ export const CONTENT = {
     ],
     projects: [
       {
+        title: "Delayed Advice Audit：机器人仿真策略性能与延迟消息通道审计框架",
+        period: "2026.06 – 2026.11",
+        category: "embodied",
+        role: "第一作者 / 研究软件与复现评估架构",
+        award: "开源研究软件 v1.0.1 · MIT & CC BY 4.0",
+        repoUrl: "https://github.com/w13579xw/Delayed-Advice-Audit",
+        description:
+          "面向机器人仿真环境（MuJoCo / Gymnasium-Robotics / MetaWorld），构建用于审计拟合策略性能、运行时消息依赖及预定义延迟消息通道价值的研究软件与分析数据集；涵盖状态与视觉实验管线、20 份审计数值 JSON / NPZ 记录、500 组冻结决策与 6 组配对结果向量的离线 NumPy 复现验证套件以及多环境 Pytest 自动化测试。",
+        metrics: ["v1.0.1 开源发布", "500 组冻结决策审计", "20 份分析数据集"],
+        tags: [
+          "Python",
+          "NumPy",
+          "Gymnasium / Robotics",
+          "MuJoCo",
+          "MetaWorld",
+          "Pytest",
+          "Matplotlib",
+          "CLI Tooling",
+        ],
+      },
+      {
         title: "众擎 T800 人形机器人高动态动作生成与鲁棒控制",
         period: "2026.03 – 2026.09",
         category: "embodied",
         role: "RL 算法开发 / 运动控制与压力测试",
         award: "众擎机器人格斗大赛 · 海选赛全球第 10 名",
+        repoUrl: "https://github.com/w13579xw/pm01_minic",
         description:
           "面向人形机器人高动态格斗控制难题，完成人体动捕关节映射与动力学校验，构建左勾拳、回身鞭拳、540° 回旋踢等高难度动作库；编写每 3–5s 施加 150N 随机外力的自动化压测闭环，针对性调优质心角动量惩罚与关键帧插值，解决转体落地失稳缺陷。",
         metrics: ["全球第 10 名", "150N 抗外力扰动", "540° 高动态动作库"],
@@ -247,6 +269,7 @@ export const CONTENT = {
         category: "agent",
         role: "系统架构设计 / 知识图谱与检索算法",
         award: "校优秀毕业设计 · 软件著作权 1 项",
+        repoUrl: "https://github.com/w13579xw/shipping-info-system",
         description:
           "基于 Django + Neo4j 打造航运垂直领域 Graph-RAG 问答平台：采用 BiLSTM-CRF 字级实体识别（F1 +8%~12%）、ESIM 语义相似度实体对齐（准确率 +15%）、BERT + TextCNN 意图分类（95%+）自动填充 Cypher 查询模板，以确定性结构化图谱知识约束 LLM 上下文。",
         metrics: ["Recall@K > 92%", "幻觉率降低 90%+", "图检索 < 100ms"],
@@ -267,6 +290,7 @@ export const CONTENT = {
         category: "embodied",
         role: "并行仿真评测 / Sim-to-Real 实机部署",
         award: "服务外包创新创业大赛 · AI 专项全国三等奖",
+        repoUrl: "https://github.com/w13579xw/KaiWu",
         description:
           "基于 Isaac Gym 搭建千级并行仿真环境，覆盖斜坡、高低台阶、乱石与外力推力多维评测集，自动化统计跌倒率、落脚点精度与步态频率；通过 ROS2 部署 PPO 策略至宇树四足实机，融合 IMU / 足端力 / 编码器遥测并引入域随机化与 PD 动作滤波实现复杂地形稳健行走。",
         metrics: ["千级并行仿真", "ROS2 实机部署", "全国三等奖"],
@@ -599,11 +623,33 @@ export const CONTENT = {
     ],
     projects: [
       {
+        title: "Delayed Advice Audit: Policy & Delayed Message-Channel Audit in Robot Sim",
+        period: "2026.06 – 2026.11",
+        category: "embodied",
+        role: "Lead Author / Research Software & Reproducibility",
+        award: "Open-Source Research Release v1.0.1 · MIT & CC BY 4.0",
+        repoUrl: "https://github.com/w13579xw/Delayed-Advice-Audit",
+        description:
+          "Research software and analyzed dataset for auditing fitted-policy performance, runtime message dependence, and predefined delayed message-channel value across MuJoCo, Gymnasium-Robotics, and MetaWorld—featuring state/visual drivers, 20 audit JSON/NPZ records, an offline NumPy audit over 500 frozen decisions, and multi-env Pytest suites.",
+        metrics: ["v1.0.1 Release", "500 Frozen Decisions", "20 Audit Datasets"],
+        tags: [
+          "Python",
+          "NumPy",
+          "Gymnasium / Robotics",
+          "MuJoCo",
+          "MetaWorld",
+          "Pytest",
+          "Matplotlib",
+          "CLI Tooling",
+        ],
+      },
+      {
         title: "EngineAI T800 Humanoid High-Dynamic Motion & Robust Control",
         period: "2026.03 – 2026.09",
         category: "embodied",
         role: "RL Algorithm & Locomotion Control",
         award: "EngineAI Robot Combat · Global Top 10 Qualifier",
+        repoUrl: "https://github.com/w13579xw/pm01_minic",
         description:
           "Built a high-dynamic humanoid skill library (left hook, spinning backfist, 540° tornado kick) with automated 150N external push stress testing and angular-momentum reward shaping to stabilize post-spin landings.",
         metrics: ["Global Top 10", "150N Push Recovery", "540° Dynamic Library"],
@@ -643,6 +689,7 @@ export const CONTENT = {
         category: "agent",
         role: "System Architecture / KG & Search",
         award: "Outstanding Thesis · Software Copyright",
+        repoUrl: "https://github.com/w13579xw/shipping-info-system",
         description:
           "Engineered a Django + Neo4j Graph-RAG system combining BiLSTM-CRF NER (+8–12% F1), ESIM entity alignment (+15%), and BERT+TextCNN intent classification (95%+) to ground LLM generation with deterministic Cypher retrieval.",
         metrics: ["Recall@K > 92%", "Hallucination -90%+", "Query < 100ms"],
@@ -663,6 +710,7 @@ export const CONTENT = {
         category: "embodied",
         role: "Simulation & Sim-to-Real Deployment",
         award: "National 3rd Prize · Service Outsourcing Innovation Contest",
+        repoUrl: "https://github.com/w13579xw/KaiWu",
         description:
           "Built multi-terrain benchmark suites (slopes, stairs, rubble, push forces) in Isaac Gym and deployed PPO policies onto Unitree quadruped hardware via ROS2 with IMU/contact telemetry and PD action filtering.",
         metrics: ["1000+ Parallel Envs", "ROS2 Real Robot", "National 3rd Prize"],

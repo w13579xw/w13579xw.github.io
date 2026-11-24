@@ -1,3 +1,7 @@
+<p align="center">
+  <strong>简体中文</strong> | <a href="./README_EN.md">English</a>
+</p>
+
 # 王俊翔 (@w13579xw) · 个人网站
 
 在线地址：[https://w13579xw.github.io](https://w13579xw.github.io)
@@ -8,8 +12,7 @@
 - 🌐 **中 / 英双语即时切换**（所有内容集中维护在 `data.js`）
 - 🔍 **交互式项目分类筛选**（All / Agent & LLM / Embodied AI / Research）
 - ⌨️ **开发者快捷命令面板**（`Ctrl + K` / `⌘ + K` 快速跳转或执行操作）
-- 🔒 **隐私保护设计**（默认仅公开学术邮箱与 GitHub，不暴露手机号与微信号）
-- 🚀 **GitHub Actions 自动部署**（推送到 `main` 分支即自动发布至 GitHub Pages）
+- 🚀 **GitHub Pages 原生分支自动部署**
 
 ## 本地预览
 
