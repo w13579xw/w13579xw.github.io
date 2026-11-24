@@ -31,6 +31,7 @@ export const CONTENT = {
       projects: "科研与项目",
       skills: "技术栈",
       education: "教育与荣誉",
+      opensource: "开源项目",
       contact: "联系",
       cmdHint: "快捷检索",
     },
@@ -83,6 +84,11 @@ export const CONTENT = {
         eyebrow: "EDUCATION & HONORS",
         title: "教育背景与荣誉奖项",
         subtitle: "扎实的计算机与人工智能基础，持续在学科竞赛与科研中验证工程实力",
+      },
+      opensource: {
+        eyebrow: "OPEN SOURCE",
+        title: "开源项目与代码仓库",
+        subtitle: "所有代码均托管在 GitHub (@w13579xw)，点击卡片可直接访问仓库与中英双语文档",
       },
       contact: {
         eyebrow: "GET IN TOUCH",
@@ -420,6 +426,50 @@ export const CONTENT = {
       { title: "CCF 计算机软件能力认证（CSP）· 全国前 9.22%", year: "Cert" },
       { title: "全国大学英语六级 CET-6（517 分）· 软件著作权 1 项", year: "Cert" },
     ],
+    opensource: [
+      {
+        name: "Delayed-Advice-Audit",
+        url: "https://github.com/w13579xw/Delayed-Advice-Audit",
+        desc: "机器人仿真策略性能、运行时消息依赖与延迟消息通道价值审计研究软件及分析数据集（v1.0.1）。",
+        tags: ["Python", "MuJoCo", "Gymnasium", "NumPy"],
+      },
+      {
+        name: "pm01_minic",
+        url: "https://github.com/w13579xw/pm01_minic",
+        desc: "众擎 PM01 人形机器人运动模仿强化学习系统：Isaac Lab 4096 并行训练、PPO 与 ONNX/JIT 实机部署。",
+        tags: ["Isaac Lab", "PPO", "RSL-RL", "ONNX"],
+      },
+      {
+        name: "shipping-info-system",
+        url: "https://github.com/w13579xw/shipping-info-system",
+        desc: "融合 Neo4j 港口知识图谱、DeepSeek 问答大模型、YOLO 船舶检测与 BM25 新闻推荐的 Django 航运平台。",
+        tags: ["Django", "Neo4j", "YOLO", "Docker"],
+      },
+      {
+        name: "KaiWu",
+        url: "https://github.com/w13579xw/KaiWu",
+        desc: "基于腾讯开悟平台的机器人强化学习训练与策略实验代码库，含 PPO 与自研策略实现。",
+        tags: ["Python", "PPO", "RL", "KaiWu"],
+      },
+      {
+        name: "daily-ai-briefing",
+        url: "https://github.com/w13579xw/daily-ai-briefing",
+        desc: "每日 08:30 自动聚合 AI 前沿动态与 GitHub Trending 的 Agent Skill 工具，生成零依赖单文件 HTML 早报。",
+        tags: ["Agent Skill", "Python", "HTML", "Automation"],
+      },
+      {
+        name: "log-analyzer-cli",
+        url: "https://github.com/w13579xw/log-analyzer-cli",
+        desc: "零第三方依赖的 Python 流式服务器日志解析与过滤命令行工具，支持表格摘要及 JSON/CSV 导出。",
+        tags: ["Python", "CLI", "Streaming", "Pytest"],
+      },
+      {
+        name: "Reflex_Blitz",
+        url: "https://github.com/w13579xw/Reflex_Blitz",
+        desc: "基于 React 19 + TypeScript + Vite 构建的极简毫秒级反应速度测试 Web 应用。",
+        tags: ["React 19", "TypeScript", "Vite"],
+      },
+    ],
     cmdPalette: {
       placeholder: "输入关键词快速跳转（如 Agent、VLA、Neo4j、邮箱、主题）...",
       empty: "没有找到匹配项",
@@ -431,6 +481,7 @@ export const CONTENT = {
         { id: "go-projects", label: "跳转到：科研成果与代表项目", hint: "Section" },
         { id: "go-skills", label: "跳转到：技术栈与核心能力", hint: "Section" },
         { id: "go-education", label: "跳转到：教育背景与荣誉", hint: "Section" },
+        { id: "go-opensource", label: "跳转到：开源项目与代码仓库", hint: "Section" },
       ],
     },
     footer: {
@@ -451,6 +502,7 @@ export const CONTENT = {
       projects: "Projects",
       skills: "Skills",
       education: "Education",
+      opensource: "Open Source",
       contact: "Contact",
       cmdHint: "Quick Jump",
     },
@@ -503,6 +555,11 @@ export const CONTENT = {
         eyebrow: "EDUCATION & HONORS",
         title: "Education & Awards",
         subtitle: "Strong CS & AI fundamentals validated through national competitions and publications",
+      },
+      opensource: {
+        eyebrow: "OPEN SOURCE",
+        title: "Open-Source Repositories",
+        subtitle: "Hosted on GitHub (@w13579xw) with bilingual documentation — click any card to explore",
       },
       contact: {
         eyebrow: "GET IN TOUCH",
@@ -840,6 +897,50 @@ export const CONTENT = {
       { title: "CCF CSP Certification · Top 9.22% Nationally", year: "Cert" },
       { title: "CET-6 (517) · 1 Software Copyright", year: "Cert" },
     ],
+    opensource: [
+      {
+        name: "Delayed-Advice-Audit",
+        url: "https://github.com/w13579xw/Delayed-Advice-Audit",
+        desc: "Research software & analyzed dataset for auditing policy performance and delayed message-channel value in robot simulation (v1.0.1).",
+        tags: ["Python", "MuJoCo", "Gymnasium", "NumPy"],
+      },
+      {
+        name: "pm01_minic",
+        url: "https://github.com/w13579xw/pm01_minic",
+        desc: "Motion imitation RL system for EngineAI PM01 humanoid with 4,096 Isaac Lab parallel envs, PPO, and ONNX/JIT export.",
+        tags: ["Isaac Lab", "PPO", "RSL-RL", "ONNX"],
+      },
+      {
+        name: "shipping-info-system",
+        url: "https://github.com/w13579xw/shipping-info-system",
+        desc: "Full-stack Django maritime platform integrating Neo4j Graph-RAG Q&A, YOLO ship detection, and BM25 news recommendation.",
+        tags: ["Django", "Neo4j", "YOLO", "Docker"],
+      },
+      {
+        name: "KaiWu",
+        url: "https://github.com/w13579xw/KaiWu",
+        desc: "RL training and policy evaluation workspace built on Tencent KaiWu featuring PPO and custom agent experiments.",
+        tags: ["Python", "PPO", "RL", "KaiWu"],
+      },
+      {
+        name: "daily-ai-briefing",
+        url: "https://github.com/w13579xw/daily-ai-briefing",
+        desc: "Automated 08:30 daily AI & GitHub Trending digest Agent Skill generating clean single-file offline HTML briefings.",
+        tags: ["Agent Skill", "Python", "HTML", "Automation"],
+      },
+      {
+        name: "log-analyzer-cli",
+        url: "https://github.com/w13579xw/log-analyzer-cli",
+        desc: "Zero-dependency Python streaming CLI tool for parsing, filtering, and exporting server logs to JSON/CSV.",
+        tags: ["Python", "CLI", "Streaming", "Pytest"],
+      },
+      {
+        name: "Reflex_Blitz",
+        url: "https://github.com/w13579xw/Reflex_Blitz",
+        desc: "Lightweight millisecond reaction-time benchmark web application built with React 19, TypeScript, and Vite.",
+        tags: ["React 19", "TypeScript", "Vite"],
+      },
+    ],
     cmdPalette: {
       placeholder: "Type to jump or run action (e.g. Agent, VLA, Neo4j, email, theme)...",
       empty: "No matching commands",
@@ -851,6 +952,7 @@ export const CONTENT = {
         { id: "go-projects", label: "Jump to: Research & Projects", hint: "Section" },
         { id: "go-skills", label: "Jump to: Tech Stack", hint: "Section" },
         { id: "go-education", label: "Jump to: Education & Honors", hint: "Section" },
+        { id: "go-opensource", label: "Jump to: Open-Source Repositories", hint: "Section" },
       ],
     },
     footer: {

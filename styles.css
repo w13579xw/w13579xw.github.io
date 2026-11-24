@@ -1011,6 +1011,78 @@ kbd {
 }
 
 /* =========================================================
+ * 开源项目模块
+ * ========================================================= */
+.oss-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.oss-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 22px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
+  transition: border-color var(--transition), transform var(--transition),
+    background-color var(--transition);
+}
+
+.oss-card:hover {
+  border-color: var(--accent-border);
+  background: var(--bg-card-hover);
+  transform: translateY(-3px);
+}
+
+.oss-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.oss-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.oss-name svg {
+  color: var(--accent-2);
+  flex-shrink: 0;
+}
+
+[data-theme="light"] .oss-name svg {
+  color: var(--accent);
+}
+
+.oss-arrow {
+  color: var(--text-muted);
+  transition: transform var(--transition), color var(--transition);
+}
+
+.oss-card:hover .oss-arrow {
+  color: var(--accent-2);
+  transform: translate(2px, -2px);
+}
+
+.oss-desc {
+  margin: 0 0 14px;
+  font-size: 13.6px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* =========================================================
  * 联系模块 & 页脚
  * ========================================================= */
 .contact-card {
@@ -1198,7 +1270,8 @@ kbd {
   }
   .project-grid,
   .skills-grid,
-  .edu-layout {
+  .edu-layout,
+  .oss-grid {
     grid-template-columns: 1fr;
   }
 }

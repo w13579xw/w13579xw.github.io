@@ -93,6 +93,7 @@ function renderNavbar(t) {
     { href: "#projects", label: t.nav.projects },
     { href: "#skills", label: t.nav.skills },
     { href: "#education", label: t.nav.education },
+    { href: "#opensource", label: t.nav.opensource },
     { href: "#contact", label: t.nav.contact },
   ];
 
@@ -306,6 +307,30 @@ function renderEducation(t) {
     .join("");
 }
 
+function renderOpenSource(t) {
+  $("ossEyebrow").textContent = t.sections.opensource.eyebrow;
+  $("ossTitle").textContent = t.sections.opensource.title;
+  $("ossSubtitle").textContent = t.sections.opensource.subtitle;
+
+  const arrowUpRight = `<svg class="oss-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>`;
+
+  $("ossGrid").innerHTML = t.opensource
+    .map(
+      (repo) => `
+      <a class="oss-card reveal" href="${repo.url}" target="_blank" rel="noopener noreferrer">
+        <div class="oss-card-top">
+          <span class="oss-name">${ICONS.github}<span>${repo.name}</span></span>
+          ${arrowUpRight}
+        </div>
+        <p class="oss-desc">${repo.desc}</p>
+        <div class="tag-row">
+          ${repo.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}
+        </div>
+      </a>`
+    )
+    .join("");
+}
+
 function renderContact(t) {
   $("contactEyebrow").textContent = t.sections.contact.eyebrow;
   $("contactTitle").textContent = t.sections.contact.title;
@@ -345,6 +370,7 @@ function renderAll() {
   renderProjects(t);
   renderSkills(t);
   renderEducation(t);
+  renderOpenSource(t);
   renderContact(t);
   observeReveals();
 }
@@ -383,7 +409,7 @@ function handleScroll() {
   const pct = docHeight > 0 ? Math.min(100, (scrollTop / docHeight) * 100) : 0;
   $("scrollProgress").style.width = `${pct}%`;
 
-  const sections = ["about", "experience", "projects", "skills", "education", "contact"];
+  const sections = ["about", "experience", "projects", "skills", "education", "opensource", "contact"];
   let current = "about";
   for (const id of sections) {
     const el = $(id);
