@@ -88,7 +88,7 @@ export const CONTENT = {
         eyebrow: "GET IN TOUCH",
         title: "一起构建有价值的 AI 系统",
         subtitle:
-          "欢迎围绕 AI Agent、大模型微调与评测、具身智能（RL / VLA）或 2027 实习机会交流探讨。为保护隐私，本页仅公开学术邮箱与 GitHub。",
+          "欢迎围绕 AI Agent、大模型微调与评测、具身智能（RL / VLA）或 2027 实习机会交流探讨。",
         copyEmail: "复制邮箱",
         sendEmail: "发送邮件",
         visitGithub: "访问 GitHub",
@@ -410,7 +410,7 @@ export const CONTENT = {
       ],
     },
     footer: {
-      copyright: "王俊翔 (@w13579xw) · 基于纯静态 Web 技术构建，托管于 GitHub Pages",
+      copyright: "",
       backToTop: "返回顶部",
     },
   },
@@ -806,7 +806,7 @@ export const CONTENT = {
       ],
     },
     footer: {
-      copyright: "Junxiang Wang (@w13579xw) · Built with vanilla web tech, hosted on GitHub Pages",
+      copyright: "",
       backToTop: "Back to top",
     },
   },
