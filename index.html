@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>王俊翔 · AI Agent & 具身智能开发者</title>
+    <meta
+      name="description"
+      content="王俊翔的个人主页 — 西安电子科技大学计算机技术硕士，专注大模型与 Agent 应用开发、具身智能（RL / VLA）与计算机视觉。"
+    />
+    <meta property="og:title" content="王俊翔 · AI Agent & 具身智能开发者" />
+    <meta
+      property="og:description"
+      content="大模型与 Agent 应用开发 · 具身智能（RL / VLA） · Graph-RAG 与工业视觉检测"
+    />
+    <meta property="og:type" content="website" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%236366f1'/%3E%3Cstop offset='100%25' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%230b0d14'/%3E%3Crect x='2' y='2' width='60' height='60' rx='14' fill='none' stroke='url(%23g)' stroke-width='3'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' fill='%23ffffff' font-family='system-ui,sans-serif' font-size='26' font-weight='700'%3EJW%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- 顶部阅读进度条 -->
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <!-- 环境背景装饰：网格 + 径向微光 -->
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+    <!-- 顶部玻璃拟态导航栏 -->
+    <header class="navbar" id="navbar">
+      <div class="container nav-inner">
+        <a href="#top" class="brand" aria-label="Home">
+          <span class="brand-mark">JW</span>
+          <span class="brand-text" id="brandName">王俊翔</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks" aria-label="Main navigation"></nav>
+
+        <div class="nav-actions">
+          <button
+            class="icon-btn cmd-trigger"
+            id="cmdTrigger"
+            type="button"
+            title="Ctrl + K"
+            aria-label="Open command palette"
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.3-4.3"></path>
+            </svg>
+            <span class="cmd-hint-text" id="cmdHintText">快捷检索</span>
+            <kbd>⌘K</kbd>
+          </button>
+
+          <button
+            class="icon-btn"
+            id="langToggle"
+            type="button"
+            aria-label="Switch language"
+            title="中 / EN"
+          >
+            EN
+          </button>
+
+          <button
+            class="icon-btn"
+            id="themeToggle"
+            type="button"
+            aria-label="Toggle color theme"
+            title="Toggle theme"
+          >
+            <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+            </svg>
+            <svg class="moon-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+            </svg>
+          </button>
+
+          <button
+            class="icon-btn mobile-menu-btn"
+            id="mobileMenuBtn"
+            type="button"
+            aria-label="Menu"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="4" y1="7" x2="20" y2="7"></line>
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <line x1="4" y1="17" x2="20" y2="17"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- 移动端抽屉菜单 -->
+      <div class="mobile-nav" id="mobileNav" hidden></div>
+    </header>
+
+    <main id="top">
+      <!-- Hero 首屏区域 -->
+      <section class="hero container" id="about">
+        <div class="hero-content">
+          <div class="status-pill reveal">
+            <span class="status-dot"></span>
+            <span id="heroStatus"></span>
+          </div>
+
+          <h1 class="hero-title reveal">
+            <span class="hero-greeting" id="heroGreeting"></span>
+            <span class="hero-name-wrap">
+              <span class="gradient-text" id="heroName"></span>
+              <span class="hero-subname" id="heroEnglishName"></span>
+            </span>
+          </h1>
+
+          <div class="hero-role reveal">
+            <span class="role-prefix" id="heroRolePrefix"></span>
+            <span class="role-rotator" id="heroRoleText"></span>
+            <span class="cursor" aria-hidden="true">|</span>
+          </div>
+
+          <p class="hero-bio reveal" id="heroBio"></p>
+
+          <div class="hero-actions reveal" id="heroActions"></div>
+
+          <div class="hero-metrics reveal" id="heroMetrics"></div>
+        </div>
+      </section>
+
+      <!-- 实习与工程经历 -->
+      <section class="section container" id="experience">
+        <div class="section-head reveal">
+          <span class="eyebrow" id="expEyebrow"></span>
+          <h2 class="section-title" id="expTitle"></h2>
+          <p class="section-subtitle" id="expSubtitle"></p>
+        </div>
+        <div class="timeline" id="experienceList"></div>
+      </section>
+
+      <!-- 科研与项目 -->
+      <section class="section container" id="projects">
+        <div class="section-head section-head-row reveal">
+          <div>
+            <span class="eyebrow" id="projEyebrow"></span>
+            <h2 class="section-title" id="projTitle"></h2>
+            <p class="section-subtitle" id="projSubtitle"></p>
+          </div>
+          <div class="filter-bar" id="projectFilters" role="tablist"></div>
+        </div>
+        <div class="project-grid" id="projectGrid"></div>
+      </section>
+
+      <!-- 技术栈 -->
+      <section class="section container" id="skills">
+        <div class="section-head reveal">
+          <span class="eyebrow" id="skillsEyebrow"></span>
+          <h2 class="section-title" id="skillsTitle"></h2>
+          <p class="section-subtitle" id="skillsSubtitle"></p>
+        </div>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </section>
+
+      <!-- 教育背景与荣誉 -->
+      <section class="section container" id="education">
+        <div class="section-head reveal">
+          <span class="eyebrow" id="eduEyebrow"></span>
+          <h2 class="section-title" id="eduTitle"></h2>
+          <p class="section-subtitle" id="eduSubtitle"></p>
+        </div>
+        <div class="edu-layout">
+          <div class="edu-list" id="educationList"></div>
+          <div class="honors-card reveal">
+            <div class="honors-header">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="6"></circle>
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+              </svg>
+              <span id="honorsHeading">Awards & Certifications</span>
+            </div>
+            <ul class="honors-list" id="honorsList"></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 联系模块 -->
+      <section class="section container" id="contact">
+        <div class="contact-card reveal">
+          <span class="eyebrow" id="contactEyebrow"></span>
+          <h2 class="section-title" id="contactTitle"></h2>
+          <p class="section-subtitle contact-desc" id="contactSubtitle"></p>
+          <div class="contact-email-box">
+            <code id="contactEmailText"></code>
+          </div>
+          <div class="contact-actions" id="contactActions"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer container">
+      <p id="footerCopy"></p>
+      <a href="#top" class="back-top" id="backToTop"></a>
+    </footer>
+
+    <!-- 快捷命令面板 (Ctrl/Cmd + K) -->
+    <div class="cmd-backdrop" id="cmdBackdrop" hidden>
+      <div class="cmd-modal" role="dialog" aria-modal="true" aria-label="Command palette">
+        <div class="cmd-input-wrap">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.3-4.3"></path>
+          </svg>
+          <input type="text" id="cmdInput" autocomplete="off" />
+          <kbd>ESC</kbd>
+        </div>
+        <ul class="cmd-list" id="cmdList"></ul>
+      </div>
+    </div>
+
+    <!-- 轻提示 Toast -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
