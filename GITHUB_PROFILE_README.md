@@ -5,8 +5,10 @@
 **M.Eng. in Computer Technology @ Xidian University · AI Agent & Embodied AI Engineer**
 
 [![Portfolio](https://img.shields.io/badge/Personal_Website-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://w13579xw.github.io)
-[![Email](https://img.shields.io/badge/Email-22d3ee?style=for-the-badge&logo=gmail&logoColor=white)](mailto:wjx13916766748@stu.xidian.edu.cn)
+[![Email](https://img.shields.io/badge/Email-22d3ee?style=for-the-badge&logo=gmail&logoColor=white)](https://w13579xw.github.io/#contact)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/w13579xw)
+
+`wjx13916766748@stu.xidian.edu.cn`
 
 </div>
 
@@ -39,20 +41,20 @@
 
 **LLM, Agent & AI**
 
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![Transformers](https://img.shields.io/badge/Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
-![Agent Skills](https://img.shields.io/badge/Agent_Workflow_Skills-6366f1?style=flat-square)
-![Graph-RAG](https://img.shields.io/badge/Graph--RAG-0ea5e9?style=flat-square)
-![VLA RL](https://img.shields.io/badge/PPO_VLA_Pi--0-10b981?style=flat-square)
+[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![Transformers](https://img.shields.io/badge/Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co/docs/transformers)
+[![Agent Skills](https://img.shields.io/badge/Agent_Workflow_Skills-6366f1?style=flat-square)](https://modelcontextprotocol.io/)
+[![Graph-RAG](https://img.shields.io/badge/Graph--RAG-0ea5e9?style=flat-square)](https://microsoft.github.io/graphrag/)
+[![VLA RL](https://img.shields.io/badge/PPO_VLA_Pi--0-10b981?style=flat-square)](https://www.physicalintelligence.company/blog/pi0)
 
 **Robotics, Backend & Infrastructure**
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java_Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
-![ROS2](https://img.shields.io/badge/ROS2-22314E?style=flat-square&logo=ros&logoColor=white)
-![Isaac Sim](https://img.shields.io/badge/Isaac_Gym_Sim-76B900?style=flat-square&logo=nvidia&logoColor=white)
-![Neo4j](https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![Java](https://img.shields.io/badge/Java_Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
+[![ROS2](https://img.shields.io/badge/ROS2-22314E?style=flat-square&logo=ros&logoColor=white)](https://docs.ros.org/)
+[![Isaac Sim](https://img.shields.io/badge/Isaac_Gym_Sim-76B900?style=flat-square&logo=nvidia&logoColor=white)](https://developer.nvidia.com/isaac/sim)
+[![Neo4j](https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white)](https://neo4j.com/)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)](https://redis.io/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/)
+[![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)](https://www.kernel.org/)
