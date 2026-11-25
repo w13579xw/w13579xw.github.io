@@ -484,6 +484,30 @@ export const CONTENT = {
         tags: ["Agent Skill", "Python", "HTML", "Automation"],
       },
       {
+        name: "software-copyright-skill",
+        url: "https://github.com/w13579xw/software-copyright-skill",
+        desc: "基于真实源码与 Word 模板自动化撰写、排版并核校中文软件著作权三件套材料的 Agent Skill。",
+        tags: ["Agent Skill", "Python", "DOCX", "Automation"],
+      },
+      {
+        name: "academic-research-skills",
+        url: "https://github.com/w13579xw/academic-research-skills",
+        desc: "精简核心版多智能体科研 Skill 套件：覆盖深度文献调研、系统综述筛选、论文撰写与模拟同行评审。",
+        tags: ["Agent Skill", "Multi-Agent", "Research", "PRISMA"],
+      },
+      {
+        name: "course-chapter-authoring",
+        url: "https://github.com/w13579xw/course-chapter-authoring",
+        desc: "依据课程群规划与 V4.1/V3.0 样章协同编写、校验教材 Word、PPT 课件与实验任务书的 Agent Skill。",
+        tags: ["Agent Skill", "Python", "DOCX / PPTX", "QA"],
+      },
+      {
+        name: "paper-templates",
+        url: "https://github.com/w13579xw/paper-templates",
+        desc: "8 套主流学术期刊官方 LaTeX 论文模板合集（IEEE、Elsevier、Springer Nature、MDPI、FCS），已清理编译临时文件。",
+        tags: ["LaTeX", "IEEE", "Elsevier", "Springer"],
+      },
+      {
         name: "log-analyzer-cli",
         url: "https://github.com/w13579xw/log-analyzer-cli",
         desc: "零第三方依赖的 Python 流式服务器日志解析与过滤命令行工具，支持表格摘要及 JSON/CSV 导出。",
@@ -979,6 +1003,30 @@ export const CONTENT = {
         url: "https://github.com/w13579xw/daily-ai-briefing",
         desc: "Automated 08:30 daily AI & GitHub Trending digest Agent Skill generating clean single-file offline HTML briefings.",
         tags: ["Agent Skill", "Python", "HTML", "Automation"],
+      },
+      {
+        name: "software-copyright-skill",
+        url: "https://github.com/w13579xw/software-copyright-skill",
+        desc: "Agent Skill for authoring, formatting, and auditing complete Chinese software copyright packages from real source code.",
+        tags: ["Agent Skill", "Python", "DOCX", "Automation"],
+      },
+      {
+        name: "academic-research-skills",
+        url: "https://github.com/w13579xw/academic-research-skills",
+        desc: "Curated multi-agent research skill suite spanning deep literature review, systematic screening, drafting, and peer review.",
+        tags: ["Agent Skill", "Multi-Agent", "Research", "PRISMA"],
+      },
+      {
+        name: "course-chapter-authoring",
+        url: "https://github.com/w13579xw/course-chapter-authoring",
+        desc: "Agent Skill for authoring and verifying university CS textbooks (Word V4.1), slides (PPTX V3.0), and lab guides.",
+        tags: ["Agent Skill", "Python", "DOCX / PPTX", "QA"],
+      },
+      {
+        name: "paper-templates",
+        url: "https://github.com/w13579xw/paper-templates",
+        desc: "Clean collection of 8 official LaTeX templates for IEEE Transactions, Elsevier, Springer Nature, MDPI, and FCS.",
+        tags: ["LaTeX", "IEEE", "Elsevier", "Springer"],
       },
       {
         name: "log-analyzer-cli",
