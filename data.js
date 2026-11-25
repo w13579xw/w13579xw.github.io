@@ -496,6 +496,12 @@ export const CONTENT = {
         tags: ["Agent Skill", "Multi-Agent", "Research", "PRISMA"],
       },
       {
+        name: "research-paper-skill",
+        url: "https://github.com/w13579xw/research-paper-skill",
+        desc: "科研论文全流程 Agent Skill：覆盖项目审计、实验统计证据、直接立论写作、审稿修订、LaTeX 投稿包与汇报 PPT（12 模块）。",
+        tags: ["Agent Skill", "Research", "LaTeX", "Prompt Library"],
+      },
+      {
         name: "course-chapter-authoring",
         url: "https://github.com/w13579xw/course-chapter-authoring",
         desc: "依据课程群规划与 V4.1/V3.0 样章协同编写、校验教材 Word、PPT 课件与实验任务书的 Agent Skill。",
@@ -1015,6 +1021,12 @@ export const CONTENT = {
         url: "https://github.com/w13579xw/academic-research-skills",
         desc: "Curated multi-agent research skill suite spanning deep literature review, systematic screening, drafting, and peer review.",
         tags: ["Agent Skill", "Multi-Agent", "Research", "PRISMA"],
+      },
+      {
+        name: "research-paper-skill",
+        url: "https://github.com/w13579xw/research-paper-skill",
+        desc: "End-to-end research & paper authoring Agent Skill covering codebase audits, evidence-backed experiments, drafting, rebuttal, and LaTeX submission.",
+        tags: ["Agent Skill", "Research", "LaTeX", "Prompt Library"],
       },
       {
         name: "course-chapter-authoring",
