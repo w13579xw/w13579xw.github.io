@@ -32,6 +32,7 @@
 | :--- | :--- | :--- |
 | **LLM & Agent** | 杭州呈起科技 · 大模型与 Agent 应用开发（2026.07 – 2026.12） | OCR 文档流水线 + 开源 LLM SFT 本地部署 + PDF→PPT Agent Skill（`Python` `PyTorch` `SFT/LoRA` `OCR` `RAG` `Claude Code/Codex` `python-pptx`） |
 | **Embodied AI** | [**Delayed-Advice-Audit**](https://github.com/w13579xw/Delayed-Advice-Audit) · 机器人仿真策略与延迟消息通道审计框架 | v1.0.1 开源研究软件，涵盖 20 份审计数据集与 500 组冻结决策离线复现验证（`Python` `NumPy` `Gymnasium-Robotics` `MuJoCo` `MetaWorld` `Pytest`） |
+| **Embodied AI** | [**Embodied AI Survey**](https://github.com/w13579xw/embodied-ai-survey) · 多模态感知与具身控制失效模式综述及仿真诊断 | 250 篇核验文献 + 8,192 配对仿真诊断，标称动作历史传播降低状态 MSE **25.4%**（`Python` `NumPy` `Matplotlib` `Delayed-Sensor Control`） |
 | **Embodied AI** | [**众擎 T800 / PM01**](https://github.com/w13579xw/pm01_minic) · 人形机器人高动态动作库与鲁棒 RL 控制 | 海选赛 **全球第 10 名**，540° 回旋踢与 150N 抗外力推力自恢复（`PyTorch` `PPO` `Isaac Gym/Sim` `Motion Retargeting`） |
 | **Embodied AI** | [**宇树四足机器人 RL (KaiWu)**](https://github.com/w13579xw/KaiWu) & 机械臂 VLA（Pi-0 / Diffusion Policy） | Isaac Gym 千级并行训练 + ROS2 Sim-to-Real 实机部署，获国赛三等奖（`ROS2` `PPO` `Pi-0` `Diffusion Policy` `Quantization`） |
 | **Graph-RAG** | [**融合知识图谱的航运信息问答系统**](https://github.com/w13579xw/shipping-info-system)（校优毕设 · 软著） | `Recall@K > 92%`，图检索 `< 100ms`，幻觉率降低 **90%+**（`Django` `Neo4j/Cypher` `BiLSTM-CRF` `ESIM` `BERT+TextCNN`） |

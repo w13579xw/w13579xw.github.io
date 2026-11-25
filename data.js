@@ -230,6 +230,26 @@ export const CONTENT = {
         ],
       },
       {
+        title: "多模态感知与具身控制失效模式及信息年龄综述与诊断",
+        period: "2026.07 – 2026.11",
+        category: "embodied",
+        role: "作者 / 综述分类法、仿真诊断与文献核验",
+        award: "Autonomous Robots 在投 · 250 篇核验文献",
+        repoUrl: "https://github.com/w13579xw/embodied-ai-survey",
+        description:
+          "面向具身智能中的多模态感知失效模式与信息年龄（Information Age），提出四维操作坐标与五条冻结规则；构建两组各 4,096 配对 episode × 16 条件的延迟传感器控制与动作历史传播仿真诊断框架，标称传播较单主传感器降低总状态 MSE 25.4%（12/16 条件改善），并完成 250 篇文献身份核验（含 147 篇 2025–2026 年前沿工作）。",
+        metrics: ["MSE 降低 25.4%", "8,192 配对仿真", "250 篇核验文献"],
+        tags: [
+          "Python",
+          "NumPy",
+          "Matplotlib",
+          "Delayed-Sensor Control",
+          "Information Age",
+          "Bootstrap CI",
+          "Reproducible Protocols",
+        ],
+      },
+      {
         title: "众擎 T800 人形机器人高动态动作生成与鲁棒控制",
         period: "2026.03 – 2026.09",
         category: "embodied",
@@ -432,6 +452,12 @@ export const CONTENT = {
         url: "https://github.com/w13579xw/Delayed-Advice-Audit",
         desc: "机器人仿真策略性能、运行时消息依赖与延迟消息通道价值审计研究软件及分析数据集（v1.0.1）。",
         tags: ["Python", "MuJoCo", "Gymnasium", "NumPy"],
+      },
+      {
+        name: "embodied-ai-survey",
+        url: "https://github.com/w13579xw/embodied-ai-survey",
+        desc: "多模态感知与具身控制失效模式及信息年龄综述配套复现代码、冻结协议、8,192 仿真诊断与 250 篇核验文献索引。",
+        tags: ["Python", "NumPy", "Embodied Control", "Survey"],
       },
       {
         name: "pm01_minic",
@@ -701,6 +727,26 @@ export const CONTENT = {
         ],
       },
       {
+        title: "Multimodal Sensing & Embodied Control: Failure-Mode & Information-Age Survey",
+        period: "2026.07 – 2026.11",
+        category: "embodied",
+        role: "Author / Taxonomy, Simulation Diagnostics & Verification",
+        award: "Targeting Autonomous Robots · 250 Verified References",
+        repoUrl: "https://github.com/w13579xw/embodied-ai-survey",
+        description:
+          "Connects failure observability, observation age, corrective authority, and evidence level via four operational coordinates and five frozen rules; provides two paired delayed-sensor control & action-history propagation studies (4,096 paired episodes × 16 conditions each) reducing aggregate MSE by 25.4% across 12/16 conditions, backed by 250 verified scholarly records (147 from 2025–2026).",
+        metrics: ["-25.4% State MSE", "8,192 Paired Episodes", "250 Verified Refs"],
+        tags: [
+          "Python",
+          "NumPy",
+          "Matplotlib",
+          "Delayed-Sensor Control",
+          "Information Age",
+          "Bootstrap CI",
+          "Reproducible Protocols",
+        ],
+      },
+      {
         title: "EngineAI T800 Humanoid High-Dynamic Motion & Robust Control",
         period: "2026.03 – 2026.09",
         category: "embodied",
@@ -903,6 +949,12 @@ export const CONTENT = {
         url: "https://github.com/w13579xw/Delayed-Advice-Audit",
         desc: "Research software & analyzed dataset for auditing policy performance and delayed message-channel value in robot simulation (v1.0.1).",
         tags: ["Python", "MuJoCo", "Gymnasium", "NumPy"],
+      },
+      {
+        name: "embodied-ai-survey",
+        url: "https://github.com/w13579xw/embodied-ai-survey",
+        desc: "Reproducible delayed-sensor control diagnostics (8,192 paired episodes), frozen protocols & 250 verified refs for embodied control survey.",
+        tags: ["Python", "NumPy", "Embodied Control", "Survey"],
       },
       {
         name: "pm01_minic",
